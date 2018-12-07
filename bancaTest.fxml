@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="760.0" prefWidth="929.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.bancaTestController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+      <children>
+        <VBox prefHeight="650.9998779296875" prefWidth="440.0000999999975">
+          <children>
+            <Button id="" fx:id="btnSaldo" mnemonicParsing="false" onAction="#saldoPressed" text="Lettura saldo" />
+            <TextArea fx:id="saldoTextArea" editable="false" prefHeight="686.0" prefWidth="441.0" wrapText="true" />
+          </children>
+          <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" fx:id="x1" />
+          </HBox.margin>
+        </VBox>
+        <VBox prefHeight="651.0" prefWidth="416.0" HBox.margin="$x1">
+          <children>
+            <Button id="" fx:id="btnBonifico" mnemonicParsing="false" onAction="#bonificoPressed" text="Invia Bonifico" />
+            <TextField fx:id="beneficiario" prefWidth="200.0" text="Nome Beneficiario" />
+            <TextField fx:id="causale" prefWidth="200.0" text="Causale" />
+            <TextField fx:id="moneta" prefWidth="200.0" text="Moneta" />
+            <TextField fx:id="quota" prefWidth="200.0" text="Quota" />
+            <TextField fx:id="data" prefWidth="200.0" text="Data" />
+            <TextArea fx:id="bonificoTextArea" editable="false" prefHeight="556.0" prefWidth="416.0" wrapText="true" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </center>
+  <top>
+    <Label alignment="CENTER" contentDisplay="CENTER" text="Benvenuto nella tua area personale" textAlignment="LEFT" BorderPane.alignment="CENTER">
+      <font>
+        <Font name="Arial" size="15.0" />
+      </font>
+    </Label>
+  </top>
+</BorderPane>
